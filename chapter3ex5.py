@@ -245,6 +245,8 @@ class DoublyLinkedList:
         Returns: The value of the node being removed
         """
 
+        # YOUR CODE HERE. Remove the next line also if necessary
+
         if index < 0 or index >= self._size:
             raise(ValueError("Index out of bounds"))
         previous_node = None
@@ -267,15 +269,3 @@ class DoublyLinkedList:
         del (current)
         self._size -=1
         return value
-
-	
-	
-	
-	
-mylist = DoublyLinkedList()
-for i in range(10, 31, 10):
-    mylist.append(i)
-val = mylist.remove(2)
-val = mylist.remove(1)
-val = mylist.remove(0)
-print(val, mylist)
